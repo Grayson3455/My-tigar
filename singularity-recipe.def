@@ -24,6 +24,7 @@ From: quay.io/fenicsproject/stable:current
 #####################
 
 %post
+    apt-get -y install libgfortran3
     pip3 install git+https://github.com/blechta/tsfc.git@2018.1.0
     pip3 install git+https://github.com/blechta/COFFEE.git@2018.1.0
     pip3 install git+https://github.com/blechta/FInAT.git@2018.1.0
